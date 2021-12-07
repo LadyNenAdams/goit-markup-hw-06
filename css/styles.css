@@ -389,7 +389,6 @@ background-color: var(--background-footer-color);
 padding-top: 15px;
 padding-bottom: 15px;
 padding-left: 15px;
-width: 295px;
 transition-property: border-color;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -936,6 +935,10 @@ letter-spacing: 0.06em;
     top: 10px;
     right: 10px;
 
+    padding: 6px;
+    
+    cursor: pointer;
+
     background: #ffffff;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
@@ -946,11 +949,13 @@ letter-spacing: 0.06em;
 
 }
 
-.modal-close:hover .icon-close-button, 
-.modal-close:focus .icon-close-button{
+.modal-close:hover .icon-closes, 
+.modal-close:focus .icon-closes {
 fill: var(--highlight-color);
-cursor: pointer;
+
 }
+
+
 
 .is-hidden {
     visibility: hidden;
@@ -964,6 +969,8 @@ cursor: pointer;
     padding: 40px;
     top: 50%;
     transform: translateY(-50%);
+
+    
 
  
 }
@@ -980,6 +987,7 @@ cursor: pointer;
 
 
 .form-label {
+    
     position: relative;
     font-style: normal;
     font-size: 12px;
@@ -988,7 +996,6 @@ cursor: pointer;
     letter-spacing: 0.01em;
     
     color: #757575;
-    margin-bottom: 28px;
     
     
 }
@@ -999,7 +1006,8 @@ cursor: pointer;
 display: flex;
 align-items: center;
 margin-top: 4px;
-padding-left: 10px;
+margin-bottom: 10px;
+padding-left: 40px;
 padding-right: 10px;
 
 
@@ -1019,7 +1027,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-icon {
 position: absolute;
-left: 5px;
+left: 0;
 top: 50%;
 transform: translateY(-50%);
 margin-left: 14px;
@@ -1040,6 +1048,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     height: 120px;
 
     margin-bottom: 20px;
+    margin-top: 4px;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
@@ -1113,8 +1122,8 @@ color: #757575;
 }
 .checkbox-label {
     width: 100%;
-    display: flex;
-    align-items: center;
+    margin-left: auto;
+    margin-right: auto; 
 }
 
 .checkbox-input {
@@ -1134,6 +1143,8 @@ margin-left: 5px;
     -webkit-appearance: none;
     background-image: url(../img/modal-check.svg);
 }
+
+
 
 
                                             /*ПОРТФОЛИО*/
