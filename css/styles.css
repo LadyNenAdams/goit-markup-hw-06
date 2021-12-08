@@ -1038,9 +1038,10 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-icon {
 position: absolute;
-left: 0;
+left: 1%;
 top: 50%;
 transform: translateY(-50%);
+transform: translateX(-50%);
 margin-left: 14px;
 transition-property: fill;
 transition-duration: 250ms;
