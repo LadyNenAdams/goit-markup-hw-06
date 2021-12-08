@@ -257,10 +257,10 @@ img {
 .footer-container {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .footer-contact {
-    margin-right: 70px;
 
 }
 
@@ -370,7 +370,7 @@ img {
 }
 
 .footer-form {
-    margin-left: 92px;
+    
    
 }
 .footer-form-wrap {
@@ -389,12 +389,18 @@ background-color: var(--background-footer-color);
 padding-top: 15px;
 padding-bottom: 15px;
 padding-left: 15px;
+
+outline: none;
+cursor: pointer;
+
 transition-property: border-color;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+color: #ffffff;
 }
 
-.footer-input:hover, .footer-input:focus {
+.footer-input:focus, .footer-input:hover {
     border-color: var(--highlight-color);
 }
 
@@ -410,6 +416,7 @@ letter-spacing: 0.03em;
 .div-button-sent{
     display: inline-block;
     margin-left: 12px;
+   
     
    
     
@@ -426,11 +433,12 @@ letter-spacing: 0.03em;
     
     background: #2196F3;
    
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-display: flex;
-align-items: center;
-text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border: hidden;
 }
 
 .button-text {
@@ -982,6 +990,8 @@ fill: var(--highlight-color);
     font-size: 20px;
     line-height: 1.15;
     color: var(--title-h2-color);
+
+    margin-bottom: 12px;
 }
 
 
@@ -1016,13 +1026,14 @@ box-sizing: border-box;
 border-radius: 4px;
 
 outline: none;
+cursor: pointer;
 
 transition-property: border-color;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input:hover, .form-input:focus {
+.form-input:focus, .form-input:hover {
     border-color: var(--highlight-color);
 }
 .form-icon {
@@ -1035,8 +1046,8 @@ transition-property: fill;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-label:hover .form-icon,
-.form-label:focus .form-icon {
+
+.form-label:hover .form-icon {
     fill: var(--highlight-color);
 
 }
@@ -1055,6 +1066,8 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 4px; 
 
     resize: none;
+    cursor: pointer;
+    outline: none;
 
     transition-property: border-color;
     transition-duration: 250ms;
@@ -1133,6 +1146,7 @@ color: #757575;
     width: 16px;
     height: 15px;
     margin-right: 6px;
+    outline: none;
 }
 
 .agree-link {
