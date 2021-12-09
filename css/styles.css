@@ -996,9 +996,15 @@ fill: var(--highlight-color);
 
 
 
-.form-label {
+.div-label {
     
     position: relative;
+   
+    
+    
+}
+
+.form-label {
     font-style: normal;
     font-size: 12px;
     line-height: 1.17;
@@ -1006,8 +1012,6 @@ fill: var(--highlight-color);
     letter-spacing: 0.01em;
     
     color: #757575;
-    
-    
 }
 
 .form-input {
@@ -1041,14 +1045,13 @@ position: absolute;
 left: 1%;
 top: 50%;
 transform: translateY(-50%);
-transform: translateX(-50%);
 margin-left: 14px;
 transition-property: fill;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-label:hover .form-icon {
+.div-label:hover .form-icon {
     fill: var(--highlight-color);
 
 }
