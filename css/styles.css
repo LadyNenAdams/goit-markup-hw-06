@@ -973,14 +973,8 @@ fill: var(--highlight-color);
 
 
 .modal-form {
-    position: absolute;
-    padding: 40px;
-    top: 50%;
-    transform: translateY(-50%);
+    padding: 30px;
 
-    
-
- 
 }
 
 .form-title {
@@ -1041,11 +1035,8 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     border-color: var(--highlight-color);
 }
 .form-icon {
-position: absolute;
-left: 1%;
-top: 50%;
-transform: translateY(-50%);
-margin-left: 14px;
+position: relative;
+display: block;
 transition-property: fill;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1056,13 +1047,18 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
+.form-svg {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+}
 
 .form-textarea {
     padding: 12px 16px;
     width: 448px;
     height: 120px;
 
-    margin-bottom: 20px;
     margin-top: 4px;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1144,6 +1140,7 @@ color: #757575;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .checkbox-input {
