@@ -134,15 +134,7 @@ img {
 
 }
 
-.studio-header {
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.studio-header:hover, .webstudio:focus {
-    color: var(--highlight-color);
-}
 
 .header-list {
     display: flex;
@@ -285,26 +277,23 @@ img {
 }
 
 
-.footer-ul {
 
-}
 
-.footer-li:not(:last-child) {
-    padding-bottom: 9px;
+.footer-link:not(:last-child) {
+    margin-bottom: 9px;
 }
 .footer-link {
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     color: var(--footer-link-color);
-    transition-property: color, background-color;
+    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 .footer-link:focus, .footer-link:hover {
-    background-color: var(--highlight-color);
-    color: var(--studio-footer-color);
+    color: var(--highlight-color);
 
 }
 
@@ -514,6 +503,7 @@ letter-spacing: 0.06em;
     font-weight: bold;
     font-size: 16px;
     line-height: 1.87;
+    border: hidden;
 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -626,7 +616,8 @@ letter-spacing: 0.06em;
     content: "Десктопные приложения";
     position: absolute;
     width: 370px;
-    background: rgba(8, 8, 10, 0.8);
+    background: rgba(47, 48, 58, 0,8);
+    ;
     bottom: 0;
     left: 0;
     padding-top: 27px;
@@ -937,7 +928,10 @@ letter-spacing: 0.06em;
 
 
 .modal-close {
+    display: flex;
+    justify-content: center;
     position: absolute;
+    align-items: center;
     width: 30px;
     height: 30px;
     top: 10px;
@@ -990,13 +984,7 @@ fill: var(--highlight-color);
 
 
 
-.div-label {
-    
-    position: relative;
-   
-    
-    
-}
+
 
 .form-label {
     font-style: normal;
@@ -1006,6 +994,14 @@ fill: var(--highlight-color);
     letter-spacing: 0.01em;
     
     color: #757575;
+    transition-property: fill;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-label:hover .form-icon {
+    fill: var(--highlight-color);
+
 }
 
 .form-input {
@@ -1017,7 +1013,6 @@ margin-top: 4px;
 margin-bottom: 10px;
 padding-left: 40px;
 padding-right: 10px;
-
 
 border: 1px solid rgba(33, 33, 33, 0.2);
 box-sizing: border-box;
@@ -1042,10 +1037,7 @@ transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.div-label:hover .form-icon {
-    fill: var(--highlight-color);
 
-}
 
 .form-svg {
     position: absolute;
